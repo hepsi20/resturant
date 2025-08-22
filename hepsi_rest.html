@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <!-- Link to your external CSS file or paste the CSS code here -->
+    <link rel="stylesheet" href="hepsi.css">
+    <script src="hepsi_rest.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Welcome to Our Restaurant</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="menu" class="menu-section">
+        <!-- HTML for the Interactive Menu Section -->
+<section id="menu" class="menu-section">
+    <div class="container">
+        <h2>Our Menu</h2>
+        
+        <!-- Menu Filter Buttons -->
+        <div class="menu-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="appetizers">Appetizers</button>
+            <button class="filter-btn" data-filter="main-course">Main Course</button>
+            <button class="filter-btn" data-filter="desserts">Desserts</button>
+            <button class="filter-btn" data-filter="drinks">Drinks</button>
+        </div>
+        
+        <!-- Dietary Filters -->
+        <div class="dietary-filters">
+            <label><input type="checkbox" data-dietary="vegetarian"> Vegetarian</label>
+            <label><input type="checkbox" data-dietary="gluten-free"> Gluten-Free</label>
+            <label><input type="checkbox" data-dietary="spicy"> Spicy</label>
+        </div>
+        
+        <!-- Menu Items Container -->
+        <div class="menu-container">
+            <!-- Appetizers -->
+            <div class="menu-item" data-category="appetizers" data-dietary="vegetarian gluten-free">
+                <div class="menu-item-tags">
+                    <span class="tag tag-vegetarian">Vegetarian</span>
+                    <span class="tag tag-gluten-free">Gluten-Free</span>
+                </div>
+                <img src="https://www.grocery.coop/sites/default/files/NCG_Dennis_Becker_Classic_Caesar_Salad_715_x_477.jpg" alt="Caesar Salad">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Caesar Salad</h3>
+                    <p class="menu-item-description">Fresh romaine lettuce with Caesar dressing and croutons.</p>
+                    <p class="menu-item-price">$8.99</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="appetizers" data-dietary="vegetarian">
+                <div class="menu-item-tags">
+                    <span class="tag tag-vegetarian">Vegetarian</span>
+                    <span class="tag tag-popular">Popular</span>
+                </div>
+                <img src="bruschetta.jpg" alt="Bruschetta">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Bruschetta</h3>
+                    <p class="menu-item-description">Toasted baguette slices topped with fresh tomatoes, basil, and garlic.</p>
+                    <p class="menu-item-price">$7.99</p>
+                </div>
+            </div>
+            
+            <!-- Main Courses -->
+            <div class="menu-item" data-category="main-course">
+                <div class="menu-item-tags">
+                    <span class="tag tag-popular">Popular</span>
+                    <span class="tag tag-chefs-choice">Chef's Choice</span>
+                </div>
+                <img src="https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-master768-v2.jpg?quality=75&auto=webp" alt="Spaghetti Carbonara">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Spaghetti Carbonara</h3>
+                    <p class="menu-item-description">Delicious spaghetti with creamy sauce and pancetta.</p>
+                    <p class="menu-item-price">$12.99</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="main-course" data-dietary="spicy">
+                <div class="menu-item-tags">
+                    <span class="tag tag-spicy">Spicy</span>
+                </div>
+                <img src="https://static.wixstatic.com/media/c47167_e9015843069a4c85af21284ec0adcb1e~mv2.webp/v1/fill/w_799,h_532,al_c,lg_1,q_85,enc_auto/c47167_e9015843069a4c85af21284ec0adcb1e~mv2.webp" alt="Indian Biryani">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Chicken Biryani</h3>
+                    <p class="menu-item-description">Aromatic basmati rice cooked with tender chicken and fragrant spices.</p>
+                    <p class="menu-item-price">$10.50</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="main-course">
+                <img src="https://cdn.shopify.com/s/files/1/0274/9503/9079/files/20220211142754-margherita-9920_5a73220e-4a1a-4d33-b38f-26e98e3cd986.jpg?v=1723650067?w=1024" alt="Margherita Pizza">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Margherita Pizza</h3>
+                    <p class="menu-item-description">Classic pizza topped with fresh mozzarella and basil.</p>
+                    <p class="menu-item-price">$10.99</p>
+                </div>
+            </div>
+            
+            <!-- Desserts -->
+            <div class="menu-item" data-category="desserts" data-dietary="vegetarian">
+                <div class="menu-item-tags">
+                    <span class="tag tag-vegetarian">Vegetarian</span>
+                    <span class="tag tag-popular">Popular</span>
+                </div>
+                <img src="tiramisu.jpg" alt="Tiramisu">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Tiramisu</h3>
+                    <p class="menu-item-description">Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                    <p class="menu-item-price">$7.50</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="desserts" data-dietary="gluten-free">
+                <div class="menu-item-tags">
+                    <span class="tag tag-gluten-free">Gluten-Free</span>
+                </div>
+                <img src="chocolate.jpg" alt="Chocolate Mousse">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Chocolate Mousse</h3>
+                    <p class="menu-item-description">Rich and airy chocolate mousse topped with whipped cream.</p>
+                    <p class="menu-item-price">$6.99</p>
+                </div>
+            </div>
+            
+            <!-- Drinks -->
+            <div class="menu-item" data-category="drinks">
+                <img src="redwine.jpg" alt="House Red Wine">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">House Red Wine</h3>
+                    <p class="menu-item-description">Glass of our premium house red wine.</p>
+                    <p class="menu-item-price">$5.99</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="drinks" data-dietary="vegetarian">
+                <div class="menu-item-tags">
+                    <span class="tag tag-vegetarian">Vegetarian</span>
+                </div>
+                <img src="greentea.jpg" alt="Green Tea">
+                <div class="menu-item-content">
+                    <h3 class="menu-item-title">Green Tea</h3>
+                    <p class="menu-item-description">Freshly brewed premium green tea.</p>
+                    <p class="menu-item-price">$3.50</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+     
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>We are a family-owned restaurant dedicated to serving the finest food in a warm and inviting atmosphere. Our chefs use only the freshest ingredients to create delicious meals that will delight your taste buds.</p>
+                    <p>Since opening our doors in 2010, we have been committed to providing exceptional dining experiences for our customers. We take pride in our diverse menu that features both classic favorites and innovative new dishes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><strong>Address:</strong> 123 Main Street, City, State 12345</p>
+                    <p><strong>Phone:</strong> (555) 123-4567</p>
+                    <p><strong>Email:</strong> info@ourrestaurant.com</p>
+                    <p><strong>Hours:</strong></p>
+                    <p>Monday - Thursday: 11:00 AM - 9:00 PM</p>
+                    <p>Friday - Saturday: 11:00 AM - 10:00 PM</p>
+                    <p>Sunday: 12:00 PM - 8:00 PM</p>
+                </div>
+
+                <div class="contact-form">
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="reservation-date">Reservation Date:</label>
+                        <input type="date" id="reservation-date" name="reservation-date" required>
+
+                        <label for="guests">Number of Guests:</label>
+                        <input type="number" id="guests" name="guests" min="1" required>
+
+                        <button type="submit">Make a Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#menu">Menu</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Our Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
